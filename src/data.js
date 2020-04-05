@@ -1,0 +1,18 @@
+export const cards = [
+  { title: 'Person 1', contact: 'person1@email.com' },
+  { title: 'Person 2', contact: 'person2@email.com' },
+  { title: 'Person 3', contact: 'person3@email.com' },
+  { title: 'Person 4', contact: 'person4@email.com' },
+  { title: 'Person 5', contact: 'person5@email.com' },
+  { title: 'Person 6', contact: 'person6@email.com' },
+  { title: 'Person 7', contact: 'person7@email.com' },
+  { title: 'Person 7', contact: 'person8@email.com' },
+  { title: 'Person 8', contact: 'person9@email.com' },
+  { title: 'Person 10', contact: 'person10@email.com' },
+  { title: 'Person 11', contact: 'person11@email.com' },
+  { title: 'Person 12', contact: 'person12@email.com' },
+  { title: 'Person 13', contact: 'person13@email.com' },
+  { title: 'Person 14', contact: 'person14@email.com' },
+  { title: 'Person 15', contact: 'person15@email.com' },
+  { title: 'Person 16', contact: 'person16@email.com' },
+];
