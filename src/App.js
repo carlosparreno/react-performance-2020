@@ -1,19 +1,21 @@
 import React from 'react';
-import './App.scss';
-import { cards } from './data.js';
-import Card from './components/Card';
+import { Route, Switch, Link } from 'react-router-dom';
+import AppLowPerformance from './AppBadPerformance';
 
 function App() {
   return (
-    <div className="app">
-      <header className="App-header">React Performance in 2020</header>
-      <main>
-        {cards.map(() => {
-          return <Card />;
-        })}
-      </main>
-      <footer>Footer</footer>
-    </div>
+    <>
+      <Switch>
+        <Route exact path="/badperformance" component={AppLowPerformance} />
+        <Route path="/gooperformance" component={AppLowPerformance} />
+      </Switch>
+      <div>
+        <Link to="/badperformance">Bad Performance App</Link>
+      </div>
+      <div>
+        <Link to="/gooperformance">Good Performance App</Link>
+      </div>
+    </>
   );
 }
 
