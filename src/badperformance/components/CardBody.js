@@ -14,8 +14,8 @@ const CardBody = ({ contact }) => {
         backgroundColor: 'rgb(255, 0, 0)',
       }}
     >
-      <h5>High Computational cost</h5>
-      <h6>{`Owner: ${contact}`}</h6>
+      <h6>High Computational cost</h6>
+      <h5>{`Owner: ${contact}`}</h5>
     </div>
   );
 };
