@@ -11,8 +11,4 @@ export const cards = [
   { title: 'Dog 10', contact: 'person10@email.com', likes: 0 },
   { title: 'Dog 11', contact: 'person11@email.com', likes: 0 },
   { title: 'Dog 12', contact: 'person12@email.com', likes: 0 },
-  { title: 'Dog 13', contact: 'person13@email.com', likes: 0 },
-  { title: 'Dog 14', contact: 'person14@email.com', likes: 0 },
-  { title: 'Dog 15', contact: 'person15@email.com', likes: 0 },
-  { title: 'Dog 16', contact: 'person16@email.com', likes: 0 },
 ];

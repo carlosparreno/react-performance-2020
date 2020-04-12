@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../App.scss';
+import './App.scss';
 import { cards } from '../data.js';
 import Card from './components/Card';
 import Grid from '../common/Grid';
@@ -35,7 +35,7 @@ function App() {
           })}
         </Grid>
       </main>
-      <footer>Footer</footer>
+      <footer>This app is slow</footer>
     </div>
   );
 }
