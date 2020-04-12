@@ -11,7 +11,7 @@ const CardBody = ({ contact }) => {
         margin: '6px',
         padding: '6px',
         color: 'white',
-        backgroundColor: 'rgb(255, 0, 0)',
+        'background-color': 'rgb(255, 0, 0)',
       }}
     >
       <h5>High Computational cost</h5>

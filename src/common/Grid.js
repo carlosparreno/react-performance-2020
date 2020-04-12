@@ -3,8 +3,6 @@ import slice from 'lodash.slice';
 import './Grid.scss';
 
 const Grid = ({ id, columnsNumber, children }) => {
-  console.log('Children: ', children);
-
   const gridCreateRow = (row, rowKey) => {
     return (
       <div className="my-uic--row" key={rowKey}>

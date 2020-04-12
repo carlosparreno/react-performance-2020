@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import './App.scss';
 import { cards } from '../data.js';
+import Card from './components/Card';
 import Grid from '../common/Grid';
-import CardHeader from './components/CardHeader';
-import CardBody from './components/CardBody';
 
 function App() {
   const [cardsData, setCardsData] = useState(cards);
@@ -18,10 +17,6 @@ function App() {
     setCardsData(newCardsData);
   };
 
-  const handleOnClick = (title) => {
-    updateCards(title);
-  };
-
   return (
     <div className="app">
       <header className="App-header">React Performance in 2020</header>
@@ -29,16 +24,13 @@ function App() {
         <Grid id="maingrid" columnsNumber={4}>
           {cardsData.map((cardData, index) => {
             return (
-              <div className="Card" key={`card-key-${cardData.title}`}>
-                <CardHeader title={cardData.title} />
-                <CardBody contact={cardData.contact} />
-                {cardData.likes !== undefined && (
-                  <span>{`Likes: ${cardData.likes}`}</span>
-                )}
-                <button onClick={() => handleOnClick(cardData.title)}>
-                  +1
-                </button>
-              </div>
+              <Card
+                key={`card-key-${cardData.title}`}
+                title={cardData.title}
+                contact={cardData.contact}
+                likes={cardData.likes}
+                update={updateCards}
+              />
             );
           })}
         </Grid>
