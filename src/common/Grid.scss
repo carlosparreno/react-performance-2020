@@ -1,0 +1,15 @@
+.my-uic--grid {
+  display: flex;
+  flex-direction: column;
+
+  .my-uic--row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .my-uic--cell {
+    border: 1px solid;
+    padding: 6px;
+    margin: 6px;
+  }
+}
