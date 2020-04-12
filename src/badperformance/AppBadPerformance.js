@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './App.scss';
 import { cards } from '../data.js';
 import Grid from '../common/Grid';
-import CardHeader from './components/CardHeader';
-import CardBody from './components/CardBody';
+import CardHeader from '../common/CardHeader';
+import CardBody from '../common/CardBody';
 
 function App() {
   const [cardsData, setCardsData] = useState(cards);
