@@ -20,6 +20,7 @@ const Card = ({ title, contact, update }) => {
           color: 'rgb(255, 0, 0)',
           backgroundColor: '#F0F0F0',
         }}
+        onHover={() => console.log(`${title} on hover`)}
       />
       <span>{`Likes: ${totalLikes}`}</span>
       <button onClick={handleOnClick}>+1</button>

@@ -31,7 +31,10 @@ function App() {
             return (
               <div className="Card" key={`card-key-${cardData.title}`}>
                 <CardHeader title={cardData.title} />
-                <CardBody contact={cardData.contact} />
+                <CardBody
+                  contact={cardData.contact}
+                  onHover={() => console.log(`${cardData.title} on hover`)}
+                />
                 {cardData.likes !== undefined && (
                   <span>{`Likes: ${cardData.likes}`}</span>
                 )}

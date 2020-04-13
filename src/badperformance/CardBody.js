@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CardBody = ({ contact }) => {
+const CardBody = ({ contact, onHover }) => {
   for (let i = 0; i < 1000; i++) {
     console.log('Computational cost for CardBody');
   }
@@ -12,6 +12,7 @@ const CardBody = ({ contact }) => {
         color: 'rgb(255, 0, 0)',
         backgroundColor: '#F0F0F0',
       }}
+      onMouseEnter={onHover}
     >
       <h6>High Computational cost</h6>
       <h5>{`Owner: ${contact}`}</h5>
