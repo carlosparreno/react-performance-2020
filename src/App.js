@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
 import AppLowPerformance from './badperformance/AppBadPerformance';
 import AppEnhancement1 from './enhancement1/AppEnhancement1';
+import AppEnhancement2 from './enhancement2/AppEnhancement2';
 
 const Links = () => (
   <>
@@ -10,6 +11,9 @@ const Links = () => (
     </div>
     <div>
       <Link to="/enhancement1">Enhancement 1 - Atomic Design</Link>
+    </div>
+    <div>
+      <Link to="/enhancement2">Enhancement 2 - Avoid reconciliation</Link>
     </div>
   </>
 );
@@ -21,7 +25,7 @@ function App() {
         <Route exact path="/" component={Links} />
         <Route path="/badperformance" component={AppLowPerformance} />
         <Route path="/enhancement1" component={AppEnhancement1} />
-        <Route path="/enhancement2" component={AppLowPerformance} />
+        <Route path="/enhancement2" component={AppEnhancement2} />
         <Route path="/enhancement3" component={AppLowPerformance} />
       </Switch>
     </>
