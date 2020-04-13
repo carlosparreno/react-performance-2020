@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import '../common/App.scss';
 import { cards } from '../data.js';
 import Grid from '../common/Grid';
+import Card from '../common/Card';
 import CardHeader from '../common/CardHeader';
 import CardBody from '../common/CardBody';
 
-function App() {
+function AppEnhancement1() {
   const [cardsData, setCardsData] = useState(cards);
 
   const updateCards = (cardTitle) => {
@@ -48,4 +49,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppEnhancement1;
