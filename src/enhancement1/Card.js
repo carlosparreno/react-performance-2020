@@ -12,7 +12,16 @@ const Card = ({ title, contact, update }) => {
   return (
     <div className="Card">
       <CardHeader title={title} />
-      <CardBody contact={contact} />
+      <CardBody
+        contact={contact}
+        style={{
+          border: '1px solid',
+          margin: '6px',
+          padding: '6px',
+          color: 'white',
+          backgroundColor: 'rgb(255, 0, 0)',
+        }}
+      />
       <span>{`Likes: ${totalLikes}`}</span>
       <button onClick={handleOnClick}>+1</button>
     </div>

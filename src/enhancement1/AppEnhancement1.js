@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../common/App.scss';
 import { cards } from '../data.js';
 import Grid from '../common/Grid';
-import Card from '../common/Card';
+import Card from './Card';
 
 function AppEnhancement1() {
   return (
