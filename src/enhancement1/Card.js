@@ -7,7 +7,6 @@ const Card = ({ title, contact, update }) => {
   const handleOnClick = () => {
     setTotalLikes(totalLikes + 1);
   };
-  console.log('Computational cost: ', title);
 
   return (
     <div className="Card">

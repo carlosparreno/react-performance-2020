@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import CardHeader from './CardHeader';
 import CardBody from './CardBody';
 
@@ -14,16 +14,13 @@ const Card = ({ title, contact, update }) => {
   const handleOnClick = () => {
     setTotalLikes(totalLikes + 1);
   };
-  console.log('Computational cost: ', title);
+
+  const onHover = useCallback(() => console.log(`${title} on hover`), [title]);
 
   return (
     <div className="Card">
       <CardHeader title={title} />
-      <CardBody
-        contact={contact}
-        style={style}
-        onHover={() => console.log(`${title} on hover`)}
-      />
+      <CardBody contact={contact} style={style} onHover={onHover} />
       <span>{`Likes: ${totalLikes}`}</span>
       <button onClick={handleOnClick}>+1</button>
     </div>
