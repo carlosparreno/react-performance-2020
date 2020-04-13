@@ -5,4 +5,4 @@ const CardHeader = ({ title }) => {
   return <h4>{title}</h4>;
 };
 
-export default CardHeader;
+export default React.memo(CardHeader);

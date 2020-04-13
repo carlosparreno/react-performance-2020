@@ -12,4 +12,4 @@ const CardBody = ({ contact, style }) => {
   );
 };
 
-export default CardBody;
+export default React.memo(CardBody);
