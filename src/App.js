@@ -4,22 +4,17 @@ import AppLowPerformance from './badperformance/AppBadPerformance';
 import AppEnhancement1 from './enhancement1/AppEnhancement1';
 import AppEnhancement2 from './enhancement2/AppEnhancement2';
 import AppEnhancement3 from './enhancement3/AppEnhancement3';
+import './Home.scss';
 
 const Links = () => (
-  <>
-    <div>
+  <div className="home">
+    <div className="links">
       <Link to="/badperformance">Slow App</Link>
-    </div>
-    <div>
       <Link to="/enhancement1">Enhancement 1 - Atomic Design</Link>
-    </div>
-    <div>
       <Link to="/enhancement2">Enhancement 2 - Avoid reconciliation</Link>
-    </div>
-    <div>
       <Link to="/enhancement3">{`Enhancement 3 - Watch out for Object Literals {{`}</Link>
     </div>
-  </>
+  </div>
 );
 
 function App() {
