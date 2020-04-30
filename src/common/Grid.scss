@@ -4,6 +4,8 @@
 
   .my-uic--row {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .my-uic--cell {

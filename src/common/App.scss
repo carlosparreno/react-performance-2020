@@ -23,7 +23,7 @@ body {
 }
 
 .app {
-  max-width: 60rem;
+  max-width: 70rem;
   width: 100%;
   background: lightgray;
   padding: 1rem;
@@ -58,6 +58,7 @@ body {
     flex: 1 1 auto;
     color: black;
     background: white;
+    overflow-x: scroll;
     h4 {
       margin: 6px 0px;
     }
