@@ -1,7 +1,7 @@
 {
   "name": "meetup-performance",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "https://carlosparreno.github.io/react-performance-2020/",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
